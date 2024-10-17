@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Recipes</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <div>
+        <h1 id="heading">Recipe</h1>
+    </div>
+    
+    <div class="form">
+        <input type="text" id="title" placeholder="Enter recipe name" />
+        <textarea id="ingredient" placeholder="Enter ingredients (comma separated)" rows="4"></textarea>
+        <input type="text" id="category" placeholder="Enter category" />
+        <input type="text" id="instructions" placeholder="Enter instructions" />
+        <button id="button" onclick="addRecipes()">Add</button>
+    </div>
+    
+    <span>
+        <input type="text" id="search" placeholder="Search..." onkeyup="searchFun()" />
+    </span>
+
+
+    <div class="mainContainer">
+        <div class="recipeH">
+            <span class="recipeHeading">Recipes</span>
+        </div>
+    <div class="recipeContainer" id="recipesContainer"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
